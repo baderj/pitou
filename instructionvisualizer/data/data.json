@@ -1,0 +1,799 @@
+{
+  "instruction_00": {
+    "opcodes": [0, 47, 53],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+
+    ]
+  },
+  "instruction_01": {
+    "opcodes": [1],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "color": "red",
+            "used": "0x80"
+          },
+         "move to value": {
+            "color": "orange",
+            "used": "0x40"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "red",
+            "used": "0x3"
+          },
+          "segment": {
+            "color": "yellow",
+            "used": "0xfc",
+            "unused": 3
+          }
+        },
+        "optional": 1
+      },
+      {
+        "labels": {
+          "destination": {
+            "color": "blue",
+            "used": "0xFFFFFFFF"
+          }
+        },
+        "optional": 1,
+        "size": 4
+      }
+    ]
+  },
+  "instruction_02": {
+    "opcodes": [2, 36, 37],
+    "bytes": [
+      {
+        "labels": {
+          "call or jump": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "stay in vm": {
+            "color": "orange",
+            "used": "0x40"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_03": {
+    "opcodes": [3, 29, 42, 58],
+    "bytes": [
+      {
+        "labels": {
+          "set stack pointer": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "index": {
+            "color": "blue",
+            "used": "0xFFFFFFFF"
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_04": {
+    "opcodes": [4, 30, 35, 51],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "dref from stack or immediate": {
+            "color": "orange",
+            "used": "0x40"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "red",
+            "used": "0x3"
+          },
+          "signed": {
+            "color": "orange",
+            "used": "0x4"
+          },
+          "segment": {
+            "color": "yellow",
+            "used": "0x38"
+          }
+        },
+        "optional": 1
+      },
+      {
+        "labels": {
+          "address": {
+            "color": "blue",
+            "used": "0xFFFFFFFF"
+          }
+        },
+        "optional": 1,
+        "size": [1,2,4,8]
+      }
+    ]
+  },
+  "instruction_05": {
+    "opcodes": [5, 46, 50],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_06": {
+    "opcodes": [6],
+    "bytes": [
+      {
+        "labels": {
+          "binary comparison": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "and / or": {
+            "color": "orange",
+            "used": "0x40"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "condition 1": {
+            "color": "yellow",
+            "used": "0xFF"
+          }
+        }
+      },
+      {
+        "labels": {
+          "condition 2": {
+            "color": "red",
+            "used": "0xFF"
+          }
+        },
+        "optional": 1
+      },
+      {
+        "labels": {
+          "destination": {
+            "color": "blue",
+            "used": "0xFFFFFFFF"
+          }
+        },
+        "size": 8
+      }
+    ]
+  },
+  "instruction_07": {
+    "opcodes": [7, 55],
+    "bytes": [
+      {
+        "labels": {
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_08": {
+    "opcodes":[8, 34, 45],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_09": {
+    "opcodes": [9],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_0A": {
+    "opcodes":  [10, 60],
+    "bytes": [
+      {
+        "labels": {
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_0B": {
+    "opcodes": [11, 32, 54],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "color": "red",
+            "used": "0x80"
+          },
+          "64bit": {
+            "color": "orange",
+            "used": "0x40"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_0C": {
+    "opcodes": [12, 41],
+    "bytes": [
+      {
+        "labels": {
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels":
+        {
+          "a": {
+            "used": "0x3",
+            "color": "red"
+          },
+          "b": {
+            "used": "0x1c",
+            "color": "orange"
+          },
+          "c": {
+            "used": "0xe0",
+            "color": "yellow"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_0D": {
+    "opcodes": [13, 62],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels":
+        {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_0E": {
+    "opcodes": [14],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels":
+        {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_0F": {
+    "opcodes": [15, 52, 57],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels":
+        {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_10": {
+    "opcodes": [16, 33, 38, 48],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels":
+        {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_11": {
+    "opcodes": [17, 56],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "dec or inc": {
+            "used": "0x40",
+            "color": "orange"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels":
+        {
+          "size": {
+            "color": "yellow",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_12": {
+    "opcodes": [18, 39, 43],
+    "bytes": [
+      {
+        "labels": {
+          "push or pop": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels":
+        {
+          "register": {
+            "color": "blue",
+            "used": "0x1F"
+          },
+          "size": {
+            "color": "red",
+            "used": "0x60"
+          },
+          "upper": {
+            "color": "orange",
+            "used": "0x80"
+          }
+        },
+        "optional": 0
+      }
+    ]
+  },
+  "instruction_13": {
+    "opcodes": [19, 59],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels":
+        {
+          "size": {
+            "color": "red",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 0
+      }
+    ]
+  },
+  "instruction_14": {
+    "opcodes": [20, 61],
+    "bytes": [
+      {
+        "labels": {
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_15": {
+    "opcodes": [21],
+    "bytes": [
+      {
+        "labels": {
+          "move or push": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "use address": {
+            "used": "0x40",
+            "color": "orange"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_16": {
+    "opcodes": [22, 44],
+    "bytes": [
+      {
+        "labels": {
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_17": {
+    "opcodes": [23],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "red",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_18": {
+    "opcodes": [24, 49],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "red",
+            "used": "0x3"
+          },
+          "signed": {
+            "color": "yellow",
+            "used": "0x4"
+          }
+        },
+        "optional": 1
+      },
+      {
+        "labels": {
+          "value": {
+            "color": "blue",
+            "used": "0xFFFFFFFF"
+          }
+        },
+        "size": [1,2,4,8]
+      }
+    ]
+  },
+  "instruction_19": {
+    "opcodes": [25],
+    "bytes": [
+      {
+        "labels": {
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  },
+  "instruction_1A": {
+    "opcodes": [26, 31],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "red",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      },
+      {
+        "labels": {
+          "value": {
+            "color": "blue",
+            "used": "0xFFFFFFFF"
+          }
+        },
+        "size": [1,2,4,8]
+      }
+    ]
+  },
+  "instruction_1B": {
+    "opcodes": [27],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "red",
+            "used": "0xFF",
+            "unused": 6
+          }
+        },
+        "optional": 1
+      },
+      {
+        "labels": {
+          "value": {
+            "color": "blue",
+            "used": "0xFFFFFFFF"
+          }
+        },
+        "size": [1,2,4,8]
+      }
+    ]
+  },
+  "instruction_1C": {
+    "opcodes":[28],
+    "bytes": [
+      {
+        "labels": {
+          "has size": {
+            "used": "0x80",
+            "color": "red"
+          },
+          "direction": {
+            "used": "0x40",
+            "color": "orange"
+          },
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      },
+      {
+        "labels": {
+          "size": {
+            "color": "red",
+            "used": "0x3"
+          },
+          "type": {
+            "color": "yellow",
+            "used": "0xFC",
+            "unused": 3
+          }
+        },
+        "optional": 1
+      }
+    ]
+  },
+  "instruction_28": {
+    "opcodes": [40],
+    "bytes": [
+      {
+        "labels": {
+          "opcode": {
+            "used": "0x3F"
+          }
+        }
+      }
+    ]
+  }
+}
+        
